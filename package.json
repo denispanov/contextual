@@ -1,0 +1,112 @@
+{
+  "name": "contextual",
+  "displayName": "Contextual",
+  "description": "Effortlessly copy file and folder content as context for ChatGPT and other LLMs, with smart .gitignore handling and token counting",
+  "version": "0.0.1",
+  "publisher": "denispanov",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/denispanov/contextual.git"
+  },
+  "bugs": {
+    "url": "https://github.com/denispanov/contextual/issues"
+  },
+  "homepage": "https://github.com/denispanov/contextual#readme",
+  "keywords": [
+    "context",
+    "chatgpt",
+    "llm",
+    "copy",
+    "clipboard",
+    "tokens",
+    "productivity"
+  ],
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets",
+    "Formatters"
+  ],
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onCommand:contextual.copyFileAsContext",
+    "onCommand:contextual.copyFolderAsContext",
+    "onCommand:contextual.copyWorkspaceAsContext",
+    "onCommand:contextual.copySelectedAsContext"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "contextual.copyFileAsContext",
+        "title": "Contextual: Copy File Content"
+      },
+      {
+        "command": "contextual.copyFolderAsContext",
+        "title": "Contextual: Copy Folder Content"
+      },
+      {
+        "command": "contextual.copyWorkspaceAsContext",
+        "title": "Contextual: Copy Workspace Content"
+      },
+      {
+        "command": "contextual.copySelectedAsContext",
+        "title": "Contextual: Copy Selected Content"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceScheme == file && !explorerResourceIsFolder",
+          "command": "contextual.copyFileAsContext",
+          "group": "7_modification"
+        },
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "contextual.copyFolderAsContext",
+          "group": "7_modification"
+        },
+        {
+          "when": "explorerResourceIsFolder || !explorerResourceIsFolder",
+          "command": "contextual.copySelectedAsContext",
+          "group": "7_modification"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "bun run build",
+    "build": "bun build ./src/extension.ts --outdir ./dist --target node --external vscode --format cjs",
+    "watch": "bun build ./src/extension.ts --outdir ./dist --target node --external vscode --format cjs --watch",
+    "pretest": "bun run build",
+    "test": "bun test",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "bun-types": "latest",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.4",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "ignore": "^5.3.0",
+    "tiktoken": "^1.0.10"
+  },
+  "type": "commonjs",
+  "packageManager": "yarn@4.2.2+sha512.c44e283c54e02de9d1da8687025b030078c1b9648d2895a65aab8e64225bfb7becba87e1809fc0b4b6778bbd47a1e2ab6ac647de4c5e383a53a7c17db6c3ff4b"
+}
