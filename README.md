@@ -4,9 +4,9 @@
 
 ![Contextual Logo](assets/icon.png)
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/denispanov.contextual)](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/denispanov.contextual)](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/denispanov.contextual)](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
+[![Version](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/denispanov/vsextensions/contextual/badge)](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
+[![Downloads](https://vsmarketplacebadges.dev/downloads/denispanov.contextual.svg)](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
+[![Rating](https://vsmarketplacebadges.dev/rating/denispanov.contextual.svg)](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
