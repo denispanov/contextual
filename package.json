@@ -2,7 +2,7 @@
   "name": "contextual",
   "displayName": "Contextual",
   "description": "Effortlessly copy file and folder content as context for ChatGPT and other LLMs, with smart .gitignore handling and token counting",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "denispanov",
   "private": false,
   "license": "MIT",
@@ -21,10 +21,11 @@
     "copy",
     "clipboard",
     "tokens",
-    "productivity"
+    "cursor",
+    "AI"
   ],
   "engines": {
-    "vscode": "^1.96.0"
+    "vscode": "^1.70.0"
   },
   "categories": [
     "Other",
@@ -93,7 +94,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "@types/vscode": "^1.96.0",
+    "@types/vscode": "^1.70.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "bun-types": "latest",

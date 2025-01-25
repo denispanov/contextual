@@ -13,7 +13,7 @@
 
 </div>
 
-Contextual is a VS Code extension that simplifies sharing code context with ChatGPT and other LLMs. It provides intelligent file and folder copying with built-in `.gitignore` support and real-time token counting.
+Contextual is an extension that simplifies sharing code context with ChatGPT and other LLMs. It works with VS Code and popular forks like Cursor, Windsurf, and Trea. The extension provides intelligent file and folder copying with built-in `.gitignore` support and real-time token counting.
 
 ## Features
 
@@ -34,14 +34,12 @@ Contextual is a VS Code extension that simplifies sharing code context with Chat
 
 ## Installation
 
-Install Contextual directly from the VS Code Marketplace:
+You can install Contextual directly from the VS Code Marketplace:
 
 1. Open VS Code
 2. Open the Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`)
 3. Search for "Contextual"
 4. Click Install
-
-Or install it directly from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual).
 
 ## Usage
 
