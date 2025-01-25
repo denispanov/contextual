@@ -1,4 +1,4 @@
-# Contextual for VS Code/Cursor
+# Contextual for VS Code
 
 <div align="center">
 
@@ -8,6 +8,8 @@
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/denispanov.contextual)](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
 [![Rating](https://img.shields.io/visual-studio-marketplace/r/denispanov.contextual)](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual)
 
 </div>
 
@@ -32,12 +34,14 @@ Contextual is a VS Code extension that simplifies sharing code context with Chat
 
 ## Installation
 
-You can install Contextual directly from the VS Code Marketplace:
+Install Contextual directly from the VS Code Marketplace:
 
 1. Open VS Code
 2. Open the Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`)
 3. Search for "Contextual"
 4. Click Install
+
+Or install it directly from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=denispanov.contextual).
 
 ## Usage
 
